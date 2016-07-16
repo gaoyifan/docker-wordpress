@@ -1,0 +1,3 @@
+[submodule "smartentry"]
+	path = smartentry
+	url = https://github.com/gaoyifan/smartentry.git
