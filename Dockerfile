@@ -1,4 +1,5 @@
 FROM debian:jessie
+
 MAINTAINER Yifan Gao <git@gaoyifan.com>
 
 COPY assets /etc/docker-assets
@@ -11,6 +12,6 @@ ENTRYPOINT ["/sbin/entrypoint.sh"]
 
 EXPOSE 80
 
-VOLUME /var/log
+VOLUME /var/log /var/www/public
 
 CMD ["/usr/bin/supervisord"]
