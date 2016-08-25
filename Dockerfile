@@ -1,14 +1,10 @@
-FROM debian:jessie
+FROM smartentry/debian:jessie-0.3.0
 
-MAINTAINER Yifan Gao <git@gaoyifan.com>
+MAINTAINER Yifan Gao <docker@yfgao.com>
 
-COPY assets /etc/docker-assets
+COPY . $ASSETS_DIR
 
-COPY smartentry/entrypoint.sh /sbin/entrypoint.sh
-
-RUN /sbin/entrypoint.sh build
-
-ENTRYPOINT ["/sbin/entrypoint.sh"]
+RUN smartentry.sh build
 
 EXPOSE 80
 
