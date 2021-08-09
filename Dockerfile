@@ -1,4 +1,4 @@
-FROM smartentry/debian:jessie-0.3.0
+FROM smartentry/debian:bullseye
 
 MAINTAINER Yifan Gao <docker@yfgao.com>
 
