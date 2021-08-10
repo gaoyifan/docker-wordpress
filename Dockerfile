@@ -1,4 +1,4 @@
-FROM smartentry/debian:bullseye
+FROM smartentry/debian:bullseye-0.4.4
 
 MAINTAINER Yifan Gao <docker@yfgao.com>
 
