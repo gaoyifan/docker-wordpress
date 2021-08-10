@@ -1,1 +1,2 @@
-chown -R www-data:www-data /var/www/public
+#!/bin/sh
+[ $(stat --format '%U' /var/www/public) != www-data ] && chown -R www-data:www-data /var/www/public
